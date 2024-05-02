@@ -1,0 +1,9 @@
+padre(juan,pedro).
+padre(juan,maria).
+madre(maria,ana).
+
+hermano(X,Y):-padre(Z,X), padre(Z,Y), X\=Y.
+hello:-
+write("what is your name?"),
+read(X),
+write("Ella no te ama"), tab(1), write(X).
